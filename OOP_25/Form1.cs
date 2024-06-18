@@ -27,7 +27,6 @@ namespace OOP_25
 
         private void Video_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'fictionBDDataSet.Books' table. You can move, or remove it, as needed.
             this.booksTableAdapter.Fill(this.fictionBDDataSet.Books);
 
         }
@@ -182,7 +181,7 @@ namespace OOP_25
            comboBoxWritters.SelectedValue == null ||
            comboBoxState.SelectedValue == null)
             {
-                MessageBox.Show("Будь ласка, заповніть всі поля перед додаванням фільму.");
+                MessageBox.Show("Будь ласка, заповніть всі поля.");
                 return;
             }
 
@@ -194,7 +193,7 @@ namespace OOP_25
 
                 if (CounterOfBooks(title))
                 {
-                    MessageBox.Show("Фільм з таким заголовком вже існує.");
+                    MessageBox.Show("Книга з таким заголовком вже існує.");
                     return;
                 }
 
